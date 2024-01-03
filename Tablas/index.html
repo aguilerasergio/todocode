@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <style type="text/css">
+        table{
+            width: 70%;
+            margin: 50px auto;
+            text-align: left;
+            
+        }
+        th{
+           font-size: 23px;
+           color: rgba(0, 0, 0, 0.672);
+           background: rgb(200, 219, 200);
+           padding-top: 5px; 
+        }
+        table, tr,td{
+            border: 1px solid rgb(197, 173, 215) ;
+           background: rgb(242, 241, 244) ;
+           border-collapse: collapse;
+         }
+         tr,td{
+            padding:5px ;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.438);
+         }
+         input{
+            font-size: 15px;
+            padding: 5px ;
+         }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <table >
+        <tr >
+           <th >Nombre</th>
+           <th>Apellido</th>
+           <th colspan="2">Telefono</th>
+        </tr>
+        <tr>
+            <td>Sergio</td>
+
+            <td>Aguilera</td>
+            <td>64876</td>
+            <td>648746</td>
+
+        </tr>
+        <tr>
+            <td>Javier</td>
+            <td>Gimenes</td>
+            <td>631233</td>
+            <td>63123</td>
+
+        </tr>
+        <tr>
+            <td>Aylen</td>
+            <td>Aguilera</td>
+            <td>123427</td>
+            <td>123427</td>
+
+        </tr>
+    </table>
+
+    <input style="width: 30%" type="number" id="numFilas" min="1" value="1">
+    <br>
+    <br>
+    <input style= "width:30%" type="number" id="numColumnas" min="1" value="1">
+    <br>
+    <br>
+    <button onclick="generarTabla();">Generar tablas</button>
+      <hr>
+    <div id="contenedorTabla">
+
+    </div>
+
+    <script type="text/javaScript"  src="generadorDeTabla.js"></script>
+</body>
+
+</html>

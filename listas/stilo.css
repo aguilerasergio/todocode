@@ -1,0 +1,23 @@
+h1{
+    color:red; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    text-align: center;
+    text-decoration:underline;
+    background: rgb(173, 174, 173);
+    width: 20%;
+}
+
+h1:hover{
+    background: rgb(187, 221, 187);
+    color: red;
+}
+h1:active{
+   background-color: rgb(102, 211, 102);
+}
+li:hover{
+    color: red;
+}
+a:checked{
+    background-color: rgb(188, 142, 231);
+}
